@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ar Ey | Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,700&display=swap"
+        rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,500&display=swap"
+        rel="stylesheet">
+
+        <link rel='stylesheet' href='fontawesome/all.css' />
+        <link rel='stylesheet' href='fontawesome/all.min.css' />
+        <link rel='stylesheet' href='fontawesome/brands.css' />
+        <link rel='stylesheet' href='fontawesome/brands.min.css' />
+        <link rel='stylesheet' href='fontawesome/fontawesome.css' />
+        <link rel='stylesheet' href='fontawesome/regular.css' />
+        <link rel='stylesheet' href='fontawesome/regular.min.css' />
+        <link rel='stylesheet' href='fontawesome/solid.css' />
+        <link rel='stylesheet' href='fontawesome/solid.min.css' />
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar">
+
+
+    <nav class="navbar navbar-default navbar-inverse " id="my-navbar">
+
+        <ul class="nav navbar-nav">
+
+            <li><a href="#main">Home</a></li>
+            <li><a href="#skills">Build a Project</a></li>
+            <li><a href="#projects">Completed Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+       
+    </nav>
+    <div class="container myalert" >
+        <div class="alert alert-info fade in" id="myalert">Message sent. Please check your email for order confirmation <a href="#" class="close"
+                data-dismiss="alert">&times</a></div>
+    </div>
+   
+
+    <section id="main" class="container">
+        <div class="profile">
+            
+            <div class="row">
+                <div class="col-md-5 text-center" >
+                    <img src="images/aguas.jpg" alt="" class="img-circle" width="300px">
+                </div>
+                <div class="col-md-6" id="aboutme">
+                    <h1 class="h1 big">Hello, I'm Ar Ey Aguas.</h1>
+                        <p class="p big">Software Developer</p>
+                        <p class="definition">Hello, welcome to my page. I am Abraham Reuben Aguas, a software developer with 1 year of experience. Currently looking for clients that are interested to partner with me in building software for their businesses.</p>
+                    
+                </div>
+            </div>
+    </div>
+    </section>
+
+
+    <section id="skills" class="container">
+     
+            <div class="page-header">
+                <h1>Build a Project</h1>
+            </div>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <div class="skill" data-toggle="modal"
+                data-target="#skill1popup">
+                    <div class="thumbnail" id="skill1">
+                        <img src="images/skill1.jpg" alt="">
+                   <div class="skill-caption">Web Design</div>
+                    </div>
+                    
+                </div>
+
+                <div class="modal fade" id="skill1popup">
+                    <div class="modal-dialog ">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="startproj">Web Design</h4>
+                                <p>Complete web design with HTML and CSS files</p>
+                            </div>
+                            <div class="modal-body">
+                                <p><i class="fas fa-check-circle"></i>&nbsp; 1 year experience in Web Designing</p>
+                                <p><i class="fas fa-check-circle"></i>&nbsp; Modern Designs</p>
+                                <p><i class="fas fa-check-circle"></i>&nbsp; Web Design for all types</p>
+                                <p><i class="fas fa-check-circle"></i>&nbsp; Good price</p>
+                                    <hr>
+                                    <form>
+                                        
+                                            <h3 class="startproj">Start your project with me.</h3>
+                                <br>
+                                        <p><i class="fas fa-check-circle"></i>&nbsp; Finished within 1- 2 working days</p>
+                                        
+                                        <p><i class="fas fa-check-circle"></i>&nbsp; Layout file</p>
+                                        <p><i class="fas fa-check-circle"></i>&nbsp; HTML and CSS files</p>
+                                        <p><i class="fas fa-check-circle"></i>&nbsp; Price: P800 / hr</p>
+                                        <br>
+                                        <div class="form-group">
+                                            <label for="name">Full Name</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="name">Email</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="message">Message</label>
+                                    
+                                            <textarea rows="5" class="form-control"></textarea>
+                                    
+                                        </div>
+                                        <button class="btn btn-danger btn-block send" data-dismiss="modal" onclick="closeModal()">Send Message</button>
+                                    </form>
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="skill" data-toggle="modal"
+                data-target="#skill2popup">
+                    <div class="thumbnail" id="skill2">
+                        <img src="images/skill2.jpg" alt="">
+                       <div class="skill-caption">Software Development</div>
+                       
+                       
+                    </div>
+                    </div>
+                    <div class="modal fade" id="skill2popup">
+                        <div class="modal-dialog ">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="startproj">Software Development</h4>
+                                    <p>Building applications to fit your needs.</p>
+                                </div>
+                                <div class="modal-body">
+                                    <p><i class="fas fa-check-circle"></i>&nbsp; 1 year experience in Software Development</p>
+                                    <p><i class="fas fa-check-circle"></i>&nbsp; Fast, reliable applications</p>
+                                    <p><i class="fas fa-check-circle"></i>&nbsp; Fully functional applications</p>
+                                    <hr>
+                                    <form> 
+                                  
+
+                    
+                                        <h3 class="startproj">Start your project with me.</h3>
+                                        <br>
+                                        <p><i class="fas fa-check-circle"></i>&nbsp; Finished within 1 - 2 months (depending on client's needs)</p>
+                    
+                                        <p><i class="fas fa-check-circle"></i>&nbsp; Layout file</p>
+                                        <p><i class="fas fa-check-circle"></i>&nbsp; Application files</p>
+                                        <p><i class="fas fa-check-circle"></i>&nbsp; Price: P40,000 - P100,000</p>
+                                        <br>
+                                        <div class="form-group">
+                                            <label for="name">Full Name</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="name">Email</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="message">Message</label>
+                    
+                                            <textarea rows="5" class="form-control"></textarea>
+                    
+                                        </div>
+                                        <button class="btn btn-danger btn-block send"data-dismiss="modal"onclick="closeModal()">Send Message</button>
+                                    </form>
+                                </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="skill" data-toggle="modal"
+                data-target="#skill3popup">
+                    <div class="thumbnail" id="skill3">
+                        <img src="images/skill3.jpg" alt="">
+                     <div class="skill-caption">React JS</div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="modal fade" id="skill3popup">
+                        <div class="modal-dialog ">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="startproj">React Applications</h4>
+                                    <p>Complete react applications</p>
+                                </div>
+                                <div class="modal-body">
+                                    <p><i class="fas fa-check-circle"></i>&nbsp; 1 year experience in React Development</p>
+                                    <p><i class="fas fa-check-circle"></i>&nbsp; Front-end websites</p>
+                                    <p><i class="fas fa-check-circle"></i>&nbsp; Good price</p>
+                                    <hr>
+                                    <form>
+                    
+                                        <h3 class="startproj">Start your project with me.</h3>
+                                        <br>
+                                        <p><i class="fas fa-check-circle"></i>&nbsp; Finished within 7 - 8 working days</p>
+                    
+                                        <p><i class="fas fa-check-circle"></i>&nbsp; Layout file</p>
+                                        <p><i class="fas fa-check-circle"></i>&nbsp; React JS Files</p>
+                                        <p><i class="fas fa-check-circle"></i>&nbsp; Price: P1,000 / hr</p>
+                                        <br>
+                                        <div class="form-group">
+                                            <label for="name">Full Name</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="name">Email</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="message">Message</label>
+                    
+                                            <textarea rows="5" class="form-control"></textarea>
+                    
+                                        </div>
+                                        <button class="btn btn-danger btn-block send"data-dismiss="modal"onclick="closeModal()">Send Message</button>
+                                    </form>
+                                </div>
+                    
+                            </div>
+                   
+
+                </div>
+            </div>
+         
+        </div>
+
+        <div class="row">
+            <div class="col-md-4" >
+                <div class="skill" data-toggle="modal"
+                data-target="#skill4popup">
+                    <div class="thumbnail" id="skill4">
+                        <img src="images/skill4.jpg" alt="">
+                       <div class="skill-caption">Web Development</div>
+                    </div>
+                    </div>
+                    </div>
+            <div class="modal fade" id="skill4popup">
+                <div class="modal-dialog ">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="startproj">Web Development</h4>
+                            <p>Full Stack web development</p>
+                        </div>
+                        <div class="modal-body">
+                            <p><i class="fas fa-check-circle"></i>&nbsp; 1 year experience in Web Development</p>
+                            <p><i class="fas fa-check-circle"></i>&nbsp; Complete with Front-end and Backend</p>
+                            <p><i class="fas fa-check-circle"></i>&nbsp; Web app with database</p>
+                            <hr>
+                            <form>
+            
+                                <h3 class="startproj">Start your project with me.</h3>
+                                <br>
+                                <p><i class="fas fa-check-circle"></i>&nbsp; Finished within 1 - 2 months (depends on client's needs)</p>
+            
+                                <p><i class="fas fa-check-circle"></i>&nbsp; Layout file</p>
+                                <p><i class="fas fa-check-circle"></i>&nbsp; Website files</p>
+                                <p><i class="fas fa-check-circle"></i>&nbsp; Price: P40,000 - P100,000</p>
+                                <br>
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Email</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+            
+                                    <textarea rows="5" class="form-control"></textarea>
+            
+                                </div>
+                                <button class="btn btn-danger btn-block send"data-dismiss="modal"onclick="closeModal()">Send Message</button>
+                            </form>
+                        </div>
+            
+                    </div>
+                </div>
+          
+            </div>
+            <div class="col-md-4" data-toggle="modal"
+                data-target="#skill5popup">
+                <div class="skill">
+                    <div class="thumbnail" id="skill5">
+                        <img src="images/skill5.jpg" alt="">
+                  <div class="skill-caption">MySQL</div>
+                    </div>
+                    </div>
+                    </div>
+            <div class="modal fade" id="skill5popup">
+                <div class="modal-dialog ">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="startproj">Database Design</h4>
+                            <p>Design and Build database for your applications</p>
+                        </div>
+                        <div class="modal-body">
+                            <p><i class="fas fa-check-circle"></i>&nbsp; 1 year experience in Databases</p>
+                            <p><i class="fas fa-check-circle"></i>&nbsp; Fast queries</p>
+                            
+                            <hr>
+                            <form>
+            
+                                <h3 class="startproj">Start your project with me.</h3>
+                                <br>
+                                <p><i class="fas fa-check-circle"></i>&nbsp; Finished within 1 month (depends on client's needs)</p>
+            
+                                <p><i class="fas fa-check-circle"></i>&nbsp; ERD and Table Structures</p>
+                                <p><i class="fas fa-check-circle"></i>&nbsp; Price: P30,000 - P50,000</p>
+                                <br>
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Email</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+            
+                                    <textarea rows="5" class="form-control"></textarea>
+            
+                                </div>
+                                <button class="btn btn-danger btn-block send"data-dismiss="modal"onclick="closeModal()">Send Message</button>
+                            </form>
+                        </div>
+            
+                
+            </div>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="skill" data-toggle="modal"
+                data-target="#skill6popup">
+                    <div class="thumbnail"id="skill6">
+                        <img src="images/skill6.jpg" alt="">
+                        <div class="skill-caption">Adobe Illustrator</div>
+                    </div>
+            
+                </div>
+                <div class="modal fade" id="skill6popup">
+                    <div class="modal-dialog ">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="startproj">Adobe Illustrator</h4>
+                                <p>Vectors and Logos</p>
+                            </div>
+                            <div class="modal-body">
+                                <p><i class="fas fa-check-circle"></i>&nbsp; 1 year experience in Adobe Illustrator</p>
+                                <p><i class="fas fa-check-circle"></i>&nbsp; Modern Designs</p>
+                                <p><i class="fas fa-check-circle"></i>&nbsp; Good price</p>
+                                <hr>
+                                <form>
+                
+                                    <h3 class="startproj">Start your project with me.</h3>
+                                    <br>
+                                    <p><i class="fas fa-check-circle"></i>&nbsp; Finished within 1- 2 working days</p>
+                
+                                    <p><i class="fas fa-check-circle"></i>&nbsp; AI file</p>
+                                    <p><i class="fas fa-check-circle"></i>&nbsp; PDF, JPEG, PNG files</p>
+                                    <p><i class="fas fa-check-circle"></i>&nbsp; Price: P800 / hr</p>
+                                    <br>
+                                    <div class="form-group">
+                                        <label for="name">Full Name</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="name">Email</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">Message</label>
+                
+                                        <textarea rows="5" class="form-control"></textarea>
+                
+                                    </div>
+                                    <button class="btn btn-danger btn-block send"data-dismiss="modal"onclick="closeModal()">Send Message</button>
+                                </form>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+      </section>
+
+    <section id="projects" class="container">
+        <div class="page-header container">
+            <h1>Completed Works</h1>
+        </div>
+        
+        <div id="my-carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#my-carousel" data-slide-to="1"></li>
+        
+            </ol>
+        
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="./images/project1.jpg" alt="" width="1200px" height="580px">
+                    <div class="carousel-caption">
+                        <h3>E-Commerce</h3>
+                        <p>Full Stack E-commerce App</p>
+        
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="./images/project2.jpg" alt="" width="1200px" height="580px">
+                    <div class="carousel-caption">
+                        <h3>Hospital Information System</h3>
+                        <p>Hospital System with Database</p>
+        
+                    </div>
+                </div>
+        
+        
+                <a href="#my-carousel" data-slide="prev" class="left carousel-control">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+        
+                <a href="#my-carousel" data-slide="next" class="right carousel-control">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+    
+    </section>
+
+ 
+    <section class="container contact" id="contact">
+        <div class="page-header">
+            <h1>CONTACT</h1>
+            <p>Send me a message to inquire.</p>
+        </div>
+
+        <form>
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="name">Email</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+
+                    <textarea rows="10" class="form-control"></textarea>
+       
+            </div>
+            <button class="btn btn-danger btn-block send">Send Message</button>
+        </form>
+        <br><br>
+    </section>
+<div class="wavy" id="footerbody">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
+    <path fill="#1c408f" fill-opacity="1" id="svgpath"
+        d="M0,160L48,138.7C96,117,192,75,288,74.7C384,75,480,117,576,144C672,171,768,181,864,186.7C960,192,1056,192,1152,181.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+    </path>
+
+</svg>
+</div>
+        <div class="footer" id="myfooter">
+         <div class="social-icons flex">
+             <a href="https://facebook.com" target="_blank"> <span><i class="fab fa-facebook"></i></span></a>
+            
+          <a href="https://www.instagram.com/r.a__1211/" target="_blank"><span><i class="fab fa-instagram"></i></span></a>
+             <a href="https://twitter.com" target="_blank"><span><i class="fab fa-twitter"></i></span></a>
+           <a href="https://linkedin.com/in/abraham-reuben-aguas" target="_blank"><span><i class="fab fa-linkedin"></i></span></a>
+         </div>
+         <div class="flex navbottom">
+               <ul class="navul">
+
+            <li><a href="#main">Home</a></li>
+            <li><a href="#skills">Build a Project</a></li>
+            <li><a href="#projects">Completed Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+         </div>
+         <div>
+             <p>Copyright &copy; 2021 Ar Ey</p>
+         </div>
+        </div>
+<!-- <div class="toggle-container">
+    <input type="checkbox" name="darkMode" id="toggle" onclick="toggleDark()"/>
+    <label for="toggle" id="moon"><i class="far fa-moon"></i></label>
+</div> -->
+</body>
+</html>
