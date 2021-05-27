@@ -5232,10 +5232,10 @@ a.thumbnail:hover {
   color: #2b542c;
 }
 .alert-info {
-  color: white;
+  color: rgb(0, 51, 17);
   /* background-color: #d9edf7; */
   /* background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%); */
-  background: #ff5100;
+  background: #00ffc8;
   /* border-color: #bce8f1; */
 }
 .alert-info hr {
